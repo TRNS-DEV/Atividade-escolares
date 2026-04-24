@@ -1,21 +1,22 @@
-function verificartime(){
-    let numero=Number(document.getElementById("Times").value);
-    let notificaco= "";
-    switch (numero) {
+function pedidos(){
+    let compra=Number(document.getElementById("pedido").value);
+    let mensagem="";
+    switch (compra) {
         case 1:
-            notificaco="Você esta torcendo para o Bayer de Munique!"
+            mensagem="Você comprou Pipoca";
             break;
             case 2:
-                notificaco="Você esta torcendo para o Sporting!"
+                mensagem="Você comprou Cachorro quente";
                 break;
                 case 3:
-                    notificaco="Você esta torcendo para o Arsenal!"
+                    mensagem="Você comprou Coca-Cola";
                     break;
                     case 4:
-              notificaco="Você esta torcendo para o atletico de Madri!"
-              break
+                        mensagem="Você comprou Suco";
+                        break;
         default:
-            notificaco="Número Inválido, por favor selecione um numero de 1 a 4"
+             mensagem="Codigo invalido selecione um item de 1 a 4";
+
     }
-    document.getElementById("Resposta").innerHTML=notificaco;
+    document.getElementById("resultado").innerHTML=mensagem;
 }
