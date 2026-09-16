@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>o que vai ser hoje?</h1>
- <h2>menu</h2>
-    <ul>
-    <li>1-pipoca</li> <br>
-    <li>2-cachorro quente</li> <br>
-    <li>3-Coca cola</li> <br>
-    <li>4-Suco</li> <br>
-    informe o numero do pedido
-    <input type="number" id="pedido" max="4" min="1">
-    <h3 id="resultado"></h3>
-    <button onclick="pedidos()">confirmar</button>
- </ul>   
+    <header>
+        <nav class="cabecalho">
+            <a href="#">Home</a>
+            <a href="sobre_mim.html">Sobre Mim</a>
+        </nav>
+    </header>
+    <main>
+        <section class="bloco_apresentacao">
+            <div class="texto_apresentacao">
+                <h1>Eleve seu negócio digital a outro nível <span class="destaque">com um Front-end de qualidade!</span></h1>
+                <p> Olá! Sou thallyson Raphael, desenvolvidor Front-end com especialidade em React, Html e Css. Ajudo pequenos negócios e designers a colocarem em práticas boas ideias. Vamos conversar?</p>
+                <div class="contato">
+                    <a href="">Instagram</a>
+                    <a href="">Github</a>
+                </div>
+            </div>
+            <div class="foto">
+                <img src="portifolio.png" alt="Foto do desenvolvedor">
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">Desenvolvido por : Thallyson Raphael</footer>
 </body>
 </html>
